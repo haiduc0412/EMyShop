@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "EMyShopDB": "Server=.;DataBase=EMyshopDB; Trusted_Connection=True;"
+  }
+}
