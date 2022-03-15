@@ -1,7 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EMyShop.AdminApp\EMyShop.AdminApp.csproj" />
+    <ProjectReference Include="..\EMyShop.Data\EMyShop.Data.csproj" />
+    <ProjectReference Include="..\EMyShop.Utilities\EMyShop.Utilities.csproj" />
+    <ProjectReference Include="..\EMyShop.ViewModel\EMyShop.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Catalog\Dtos\" />
+    <Folder Include="Common\" />
+    <Folder Include="System\Roles\" />
+  </ItemGroup>
 
 </Project>
