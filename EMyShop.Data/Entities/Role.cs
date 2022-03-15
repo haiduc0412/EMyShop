@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Text;
 namespace EMyShop.Data.Entities
 {
     [Table("Role")]
-    public class Role
+    public class Role: IdentityRole<int>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
